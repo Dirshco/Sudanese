@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسودة اللائحة الداخلية للجالية السودانية الأمريكية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Arabic', 'Inter', sans-serif; /* Prioritize Arabic font */
+            background-color: #0d1117; 
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for aesthetics */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1f2a37; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #60a5fa; }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <header class="max-w-4xl mx-auto mb-10 text-center">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-blue-400">
+            مراجعة مسودة اللائحة الداخلية
+        </h1>
+        <p class="mt-2 text-xl text-gray-300">
+            الجالية السودانية في منطقة لانسينغ الكبرى
+        </p>
+        <p class="mt-1 text-sm text-gray-500">
+            مراجعة القرارات/القيم الأولية لمواد الحوكمة.
+        </p>
+    </header>
+
+    <div id="bylaws-container" class="max-w-4xl mx-auto space-y-8">
+        <!-- Content will be rendered here by JavaScript --></div>
+
+    <footer class="max-w-4xl mx-auto mt-12 text-center text-sm text-gray-500 border-t border-gray-700 pt-4">
+        تاريخ اعتماد المسودة: 29/10/25 (النسخة الأولية)
+    </footer>
+
+    <script>
+        // Manually structured data for reliable rendering
+        const bylawsData = [
+            { article: 'I', section: '1', title: 'Name', description: 'الاسم القانوني للمنظمة.', note: 'Must match Articles of Incorporation.', decision: 'الجالية السودانية في منطقة لانسينغ الكبرى' },
+            { article: 'I', section: '2', title: 'Governing Law', description: 'الولاية التي تم تأسيس المنظمة بموجب قوانينها.', note: 'Michigan Nonprofit Corporation Act.', decision: 'ولاية ميشيغان' },
+            { article: 'I', section: '3', title: 'Purpose', description: 'الرسالة والأهداف (خيرية، تعليمية، إلخ).', note: 'Required for 501(c)(3) status.', decision: 'تعزيز الرفاه الاجتماعي والثقافي للجالية السودانية في منطقة لانسينغ الكبرى. المنظمة هي جمعية مجتمعية غير ربحية، غير سياسية، وغير دينية، تأسست من أجل: 1. تعزيز الوحدة والتعاون بين المقيمين السودانيين في منطقة لانسينغ الكبرى. 2. الحفاظ على الثقافة والتراث السوداني وتعزيزهما. 3. دعم التنمية التعليمية والاجتماعية والمهنية. 4. تسهيل الاندماج والمشاركة مع المجتمع الأوسع. 5. تقديم المساعدة والدعم للمهاجرين واللاجئين والأعضاء المحتاجين.' },
+            { article: 'I', section: '4', title: 'Principal Office', description: 'موقع حفظ سجلات المنظمة.', note: 'Must be in the Greater Lansing Area, MI.', decision: '100 main st, Lansing, MI 48910' },
+
+            { article: 'II', section: '1', title: 'Eligibility', description: 'من يحق له أن يكون عضواً.', note: 'Should be broad to support mission.', decision: 'العضوية مفتوحة لجميع المقيمين السودانيين في منطقة لانسينغ الكبرى وداعمي رسالة المنظمة.' },
+            { article: 'II', section: '2', title: 'Dues', description: 'صلاحية تحديد رسوم العضوية.', note: 'Set by the Board of Directors.', decision: 'تُحدد من قبل مجلس الإدارة.' },
+            { article: 'II', section: '3', title: 'Rights', description: 'حقوق التصويت وامتيازات الأعضاء.', note: 'Essential for membership-based organizations.', decision: 'حق التصويت، العمل في اللجان، والوصول إلى السجلات.' },
+            { article: 'II', section: '4', title: 'Termination', description: 'عملية تعليق أو إنهاء عضوية.', note: 'Requires due process (notice and hearing).', decision: 'يجوز تعليق أو إنهاء العضوية بقرار أغلبية الثلثين (2/3) من اللجنة التنفيذية بسبب سلوك يضر بالمنظمة.' },
+            
+            { article: 'III', section: '1', title: 'Annual Meeting and Election', description: 'متطلبات وهدف الاجتماع السنوي الرئيسي.', note: 'Used for elections and reports.', decision: 'تجتمع الجمعية العمومية سنويًا. يُنتخب المسؤولون بأغلبية الأصوات لمدة سنتين، قابلة للتجديد حتى 3 دورات إجمالاً. تُملأ الشواغر بتعيين من اللجنة التنفيذية حتى الانتخابات التالية.' },
+            { article: 'III', section: '2', title: 'Special Meetings', description: 'من يحق له الدعوة لاجتماع طارئ.', note: 'Set a clear procedure.', decision: 'تجتمع اللجنة التنفيذية فصليًا أو حسب الحاجة. تُدعى للاجتماع من قبل الرئيس، أو أغلبية مجلس الإدارة، أو 20% من الأعضاء.' },
+            { article: 'III', section: '3', title: 'Notice', description: 'كيف يتم إبلاغ الأعضاء بالاجتماعات.', note: 'Timeframe is important for legal compliance.', decision: 'إخطار كتابي أو إلكتروني مسبق بـ 60 يومًا.' },
+            { article: 'III', section: '4', title: 'Quorum', description: 'الحد الأدنى لعدد الأعضاء المطلوب لإجراء الأعمال.', note: 'Essential for legal decisions.', decision: '15% من الأعضاء العاملين.' },
+            { article: 'III', section: '5', title: 'Voting', description: 'متطلبات الأغلبية القياسية للاقتراحات.', note: 'Simple majority unless otherwise specified.', decision: 'الأغلبية البسيطة للأصوات المدلى بها في اجتماع يتوفر فيه النصاب القانوني.' },
+            
+            { article: 'IV', section: '1', title: 'Authority', description: 'دور مجلس الإدارة كهيئة حاكمة.', note: 'Board manages all affairs.', decision: 'تُدار شؤون المنظمة بواسطة مجلس الإدارة.' },
+            { article: 'IV', section: '2', title: 'Number', description: 'حجم مجلس الإدارة.', note: 'Michigan requires a minimum of 3 directors.', decision: 'الحد الأدنى: 5 / الحد الأقصى: 9' },
+            { article: 'IV', section: '3', title: 'Term', description: 'مدة خدمة المدير وحدود الولاية.', note: 'Staggered terms are recommended for stability.', decision: 'المدة: سنتان / الحد الأقصى: 3 فترات متتالية.' },
+            { article: 'IV', section: '4', title: 'Removal', description: 'عملية عزل المدير.', note: 'Must be clearly defined.', decision: 'تصويت 2/3 من المديرين المتبقين أو أغلبية الأعضاء.' },
+            { article: 'IV', section: '5', title: 'Meetings', description: 'وتيرة اجتماعات مجلس الإدارة الدورية.', note: 'Essential for active governance.', decision: 'فصليًا' },
+            { article: 'IV', section: '6', title: 'Quorum', description: 'الحد الأدنى لعدد المديرين المطلوب لعقد اجتماع مجلس الإدارة.', note: 'Usually a simple majority of Directors in office.', decision: 'الأغلبية البسيطة للمديرين الحاليين.' },
+            
+            { article: 'V', section: '1', title: 'Officers', description: 'المناصب المطلوبة.', note: 'Michigan requires a President, Secretary, and Treasurer.', decision: 'الرئيس، نائب الرئيس، أمين السر، أمين الصندوق.' },
+            { article: 'V', section: '2', title: 'Election/Term', description: 'كيف ومتى يتم اختيار المسؤولين.', note: 'Elected by the Board from the Directors.', decision: 'مدة سنة واحدة، يُنتخبون من قبل مجلس الإدارة.' },
+            { article: 'V', section: '3', title: 'Duties', description: 'موجز لمهام كل مسؤول.', note: 'President is CEO; Secretary keeps minutes; Treasurer handles finance.', decision: 'المهام: الرئيس: يقود ويمثل. نائب الرئيس: يساعد الرئيس. أمين السر: السجلات والمراسلات. أمين الصندوق: المالية. مسؤول العلاقات العامة: التواصل. منسق الثقافة والفعاليات: الفعاليات. منسق الخدمات المجتمعية: برامج الرعاية. المالية: السنة المالية: من 1 يناير إلى 31 ديسمبر. تُستخدم الأموال فقط لأغراض المنظمة. يقدم أمين الصندوق تقريرًا سنويًا. لا توجد توزيعات أرباح للأعضاء باستثناء التعويض المعقول.' },
+            
+            { article: 'VI', section: '1', title: 'Indemnification', description: 'حماية المديرين والمسؤولين من المسؤولية القانونية.', note: 'Recommended for non-profits.', decision: 'بأقصى مدى يسمح به قانون ميشيغان.' },
+            { article: 'VI', section: '2', title: 'Conflict of Interest', description: 'متطلبات سياسة رسمية لتضارب المصالح.', note: 'Required for IRS 501(c)(3) application.', decision: 'سيعتمد المجلس سياسة رسمية ويراجعها سنويًا.' },
+            
+            { article: 'VII', section: '1', title: 'Amendments', description: 'كيف يمكن تغيير اللائحة الداخلية.', note: 'Must require a supermajority of the voting body.', decision: 'تصويت 2/3 من الأعضاء في اجتماع يُعلن فيه عن التعديل المقترح.' },
+            
+            { article: 'VIII', section: '1', title: 'Dissolution', description: 'كيفية التعامل مع الأصول في حال حل المنظمة.', note: 'Required for IRS 501(c)(3) status.', decision: 'تُوزع الأصول على كيان آخر مؤهل بموجب المادة 501(c)(3) أو جهة حكومية.' },
+            { article: 'VIII', section: '2', title: 'Non-Discrimination', description: 'قواعد عدم التمييز.', note: 'Important rules', decision: 'لا تميز المنظمة على أساس العرق أو اللون أو الدين أو الجنس أو العمر أو الإعاقة أو الأصل القومي.' },
+            { article: 'VIII', section: '3', title: 'Committees/subcommittees', description: 'هيكل المنظمة.', note: 'Details about committes and subcomittees', decision: 'يجوز للجنة التنفيذية إنشاء لجان فرعية (مثل: شؤون الشباب، شؤون المرأة، التعليم).' },
+            { article: 'VIII', section: '4', title: 'Adoption', description: 'اعتمدها الأعضاء المؤسسون للجالية السودانية في منطقة لانسينغ الكبرى بتاريخ.', note: '', decision: '25/10/29' }, /* Note: The original date was 10/29/25, often interpreted as Oct 29, 2025. In Arabic, it's common to write Day/Month/Year. */
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('bylaws-container');
+            
+            // Group data by Article No.
+            const groupedData = bylawsData.reduce((acc, item) => {
+                const articleKey = item.article;
+                if (!acc[articleKey]) {
+                    acc[articleKey] = [];
+                }
+                acc[articleKey].push(item);
+                return acc;
+            }, {});
+
+            // Map Article Roman numeral to a human-readable title (in Arabic)
+            const articleTitles = {
+                'I': 'التنظيم والاسم',
+                'II': 'العضوية',
+                'III': 'الاجتماعات والتصويت',
+                'IV': 'مجلس الإدارة',
+                'V': 'المسؤولون والواجبات',
+                'VI': 'الامتثال المالي والقانوني',
+                'VII': 'تعديلات اللائحة الداخلية',
+                'VIII': 'أحكام عامة',
+            };
+
+            // Function to render a single data row
+            const renderSection = (data) => `
+                <div class="p-4 bg-gray-800 rounded-lg shadow-lg border border-gray-700 hover:border-blue-500 transition duration-300 text-right">
+                    <!-- Title/Topic and Section No --><h4 class="text-lg font-bold text-gray-100 flex items-baseline justify-end">
+                        <span class="text-blue-400 ml-2 text-sm font-mono tracking-widest">${data.article}.${data.section}</span>
+                        ${data.title}
+                    </h4>
+                    
+                    <!-- Description & Key Requirement/Michigan Law Note --><div class="mt-2 text-sm text-gray-400 border-r-2 border-gray-600 pr-3">
+                        <p class="font-medium">${data.description}</p>
+                        <p class="mt-1 text-xs italic text-gray-500">
+                            ${data.note ? `[ملاحظة: ${data.note}]` : ''}
+                        </p>
+                    </div>
+
+                    <!-- Initial Decision/Value (The actual bylaw text) --><div class="mt-4 p-3 bg-gray-900 rounded-md border border-gray-700">
+                        <p class="text-xs uppercase text-green-400 font-semibold mb-1 tracking-wider">القيمة المقترحة مبدئيًا</p>
+                        <p class="text-base text-gray-200 leading-relaxed whitespace-pre-wrap">${data.decision}</p>
+                    </div>
+                </div>
+            `;
+
+            // Function to render the entire Article group
+            Object.keys(groupedData).forEach(articleKey => {
+                const articleData = groupedData[articleKey];
+                const articleTitle = articleTitles[articleKey] || `المادة ${articleKey}`;
+
+                const articleSection = document.createElement('section');
+                articleSection.className = 'bg-gray-900 rounded-xl shadow-2xl p-6 md:p-8';
+                
+                articleSection.innerHTML = `
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-6 border-b-4 border-blue-600 pb-2 flex items-center justify-end">
+                        <span class="text-blue-500 ml-3">${articleKey}</span>
+                        ${articleTitle}
+                    </h2>
+                    <div class="space-y-4">
+                        ${articleData.map(renderSection).join('')}
+                    </div>
+                `;
+                container.appendChild(articleSection);
+            });
+        });
+    </script>
+</body>
+</html>
