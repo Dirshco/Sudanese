@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اللمة السودانية للرجال 2026 — الخطة الرئيسية للفعالية</title>
+<style>
+  :root {
+    --ink: #18212b;
+    --muted: #5f6b76;
+    --line: #dfe5ea;
+    --paper: #ffffff;
+    --bg: #f3f6f8;
+    --accent: #176b5b;
+    --accent-dark: #0e4d42;
+    --accent-soft: #e7f3ef;
+    --gold: #b58a3a;
+    --gold-soft: #faf3e5;
+    --danger: #a64242;
+    --shadow: 0 12px 30px rgba(24, 33, 43, .08);
+    --radius: 16px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  a { color: inherit; }
+  button { font: inherit; }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,.94);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .topbar-inner {
+    max-width: 1180px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: var(--accent);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+  }
+
+  .nav {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: var(--muted);
+    font-size: .86rem;
+    padding: 7px 10px;
+    border-radius: 8px;
+  }
+
+  .nav a:hover {
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+  }
+
+  .hero {
+    background:
+      radial-gradient(circle at 90% 20%, rgba(181,138,58,.16), transparent 28%),
+      radial-gradient(circle at 10% 90%, rgba(23,107,91,.12), transparent 30%),
+      linear-gradient(135deg, #0e4d42, #176b5b);
+    color: #fff;
+    padding: 68px 20px 60px;
+  }
+
+  .hero-inner {
+    max-width: 1180px;
+    margin: auto;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 11px;
+    border: 1px solid rgba(255,255,255,.28);
+    border-radius: 999px;
+    background: rgba(255,255,255,.08);
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+  }
+
+  h1 {
+    margin: 18px 0 10px;
+    font-size: clamp(2.2rem, 5vw, 4.4rem);
+    line-height: 1.02;
+    letter-spacing: -.045em;
+    max-width: 900px;
+  }
+
+  .hero-subtitle {
+    max-width: 760px;
+    margin: 0;
+    color: rgba(255,255,255,.86);
+    font-size: 1.08rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
+
+  .btn {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 750;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-light {
+    background: #fff;
+    color: var(--accent-dark);
+  }
+
+  .btn-outline {
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.35);
+    background: rgba(255,255,255,.08);
+  }
+
+  main {
+    max-width: 1180px;
+    margin: -25px auto 70px;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  section {
+    scroll-margin-top: 80px;
+    margin-top: 30px;
+  }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .overview-card {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .overview-item {
+    padding: 22px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .overview-item:nth-child(3n) { border-right: 0; }
+  .overview-item:nth-last-child(-n+3) { border-bottom: 0; }
+
+  .label {
+    color: var(--muted);
+    text-transform: uppercase;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    margin-bottom: 4px;
+  }
+
+  .value {
+    font-weight: 750;
+  }
+
+  .section-heading {
+    margin: 0 0 14px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .section-heading h2 {
+    margin: 0;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    letter-spacing: -.025em;
+  }
+
+  .section-heading p {
+    margin: 3px 0 0;
+    color: var(--muted);
+    font-size: .94rem;
+  }
+
+  .purpose {
+    padding: 28px;
+  }
+
+  .purpose-list {
+    margin: 18px 0 0;
+    padding-left: 22px;
+  }
+
+  .purpose-list li { margin: 8px 0; }
+
+  .teams {
+    display: grid;
+    gap: 20px;
+  }
+
+  .team {
+    overflow: hidden;
+  }
+
+  .team-header {
+    padding: 22px 24px;
+    background: linear-gradient(135deg, var(--accent-soft), #fff);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .team-number {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: var(--accent);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    flex: 0 0 auto;
+  }
+
+  .team-title {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .team-title h3 {
+    margin: 0;
+    font-size: 1.18rem;
+  }
+
+  .lead {
+    white-space: nowrap;
+    font-size: .78rem;
+    font-weight: 800;
+    color: var(--accent-dark);
+    background: #fff;
+    border: 1px solid #c9e3dc;
+    padding: 6px 10px;
+    border-radius: 999px;
+  }
+
+  .team-body {
+    padding: 24px;
+  }
+
+  .responsibility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .responsibility-grid.two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subcard {
+    background: #fbfcfd;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px;
+  }
+
+  .subcard h4 {
+    margin: 0 0 10px;
+    font-size: .95rem;
+  }
+
+  ul.clean {
+    padding-left: 19px;
+    margin: 0;
+  }
+
+  ul.clean li { margin: 6px 0; }
+
+  .timeline {
+    padding: 8px 0 0;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 680px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--accent);
+    color: #fff;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+
+  tr:last-child td { border-bottom: 0; }
+  tbody tr:hover { background: #f8fbfa; }
+
+  .time {
+    white-space: nowrap;
+    font-weight: 800;
+    color: var(--accent-dark);
+  }
+
+  .expectations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 24px;
+  }
+
+  .check-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 13px 14px;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    background: #fff;
+  }
+
+  .check-item input {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    accent-color: var(--accent);
+  }
+
+  .check-item.done span {
+    text-decoration: line-through;
+    color: var(--muted);
+  }
+
+  .followup {
+    padding: 26px;
+  }
+
+  .steps {
+    counter-reset: steps;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: grid;
+    gap: 11px;
+  }
+
+  .steps li {
+    counter-increment: steps;
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    padding: 13px;
+    background: #fbfcfd;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+  }
+
+  .steps li::before {
+    content: counter(steps);
+    flex: 0 0 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--gold-soft);
+    color: #805d1c;
+    font-weight: 900;
+  }
+
+  .outcome {
+    margin-top: 20px;
+    padding: 20px;
+    border-left: 4px solid var(--gold);
+    background: var(--gold-soft);
+    border-radius: 0 12px 12px 0;
+  }
+
+  footer {
+    margin-top: 55px;
+    padding: 30px 20px 50px;
+    text-align: center;
+    color: var(--muted);
+    font-size: .86rem;
+  }
+
+  .print-note {
+    max-width: 1180px;
+    margin: 18px auto 0;
+    padding: 0 20px;
+    color: var(--muted);
+    font-size: .8rem;
+  }
+
+  @media (max-width: 850px) {
+    .nav { display: none; }
+    .overview-grid { grid-template-columns: repeat(2, 1fr); }
+    .overview-item:nth-child(3n) { border-right: 1px solid var(--line); }
+    .overview-item:nth-child(2n) { border-right: 0; }
+    .overview-item:nth-last-child(-n+3) { border-bottom: 1px solid var(--line); }
+    .overview-item:nth-last-child(-n+2) { border-bottom: 0; }
+    .responsibility-grid,
+    .responsibility-grid.two,
+    .expectations { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 560px) {
+    .hero { padding-top: 45px; }
+    .overview-grid { grid-template-columns: 1fr; }
+    .overview-item,
+    .overview-item:nth-child(2n),
+    .overview-item:nth-child(3n) {
+      border-right: 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .overview-item:last-child { border-bottom: 0; }
+    .team-header { flex-direction: column; }
+    .lead { align-self: flex-start; }
+    main { padding: 0 12px; }
+  }
+
+  @media print {
+    @page {
+      size: Letter;
+      margin: 0.55in;
+    }
+
+    body {
+      background: #fff;
+      font-size: 10.5pt;
+    }
+
+    .topbar,
+    .hero-actions,
+    .print-note {
+      display: none !important;
+    }
+
+    .hero {
+      color: #000;
+      background: #fff;
+      padding: 10px 0 18px;
+      border-bottom: 2px solid #000;
+    }
+
+    .hero .eyebrow {
+      color: #000;
+      border: 1px solid #999;
+      background: #fff;
+    }
+
+    .hero-subtitle { color: #333; }
+
+    main {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .card {
+      box-shadow: none;
+      border: 1px solid #bbb;
+    }
+
+    section { margin-top: 18px; }
+
+    .team,
+    .subcard,
+    .section-heading,
+    .overview-card,
+    table,
+    .purpose,
+    .followup,
+    .outcome {
+      break-inside: avoid;
+    }
+
+    .team-header {
+      background: #f3f3f3;
+      color: #000;
+    }
+
+    th {
+      background: #eee;
+      color: #000;
+      border-bottom: 1px solid #888;
+    }
+
+    a { text-decoration: none; }
+    footer { padding-bottom: 0; }
+  }
+
+  html[dir="rtl"] body {
+    font-family: "Noto Sans Arabic", "Noto Sans", "Segoe UI", Tahoma, Arial, sans-serif;
+  }
+  html[dir="rtl"] .nav,
+  html[dir="rtl"] .hero-actions { justify-content: flex-start; }
+  html[dir="rtl"] .team-header,
+  html[dir="rtl"] .section-heading,
+  html[dir="rtl"] .topbar-inner { flex-direction: row; }
+  html[dir="rtl"] .team-title { flex-direction: row; }
+  html[dir="rtl"] .purpose-list,
+  html[dir="rtl"] ul.clean { padding-left: 0; padding-right: 21px; }
+  html[dir="rtl"] .steps { padding-right: 0; }
+  html[dir="rtl"] .steps li { flex-direction: row; }
+  html[dir="rtl"] .outcome {
+    border-left: 0;
+    border-right: 4px solid var(--gold);
+    border-radius: 12px 0 0 12px;
+  }
+  html[dir="rtl"] th,
+  html[dir="rtl"] td { text-align: right; }
+  html[dir="rtl"] .label { letter-spacing: 0; }
+
+</style>
+</head>
+
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark">G</div>
+      <span>GLSA • Summer Gathering 2026</span>
+    </div>
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#overview">نظرة عامة</a>
+      <a href="#purpose">الأهداف</a>
+      <a href="#teams">الفرق</a>
+      <a href="#timeline">الجدول الزمني</a>
+      <a href="#volunteers">المتطوعون</a>
+      <a href="#followup">المتابعة</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">جمعية السودانيين في منطقة لانسنج الكبرى (GLSA)</span>
+    <h1>اللمة السودانية للرجال 2026</h1>
+    <p class="hero-subtitle">
+      الخطة الرئيسية للفعالية ودليل التشغيل — دليل عملي للتخطيط والتنظيم والتنفيذ
+      والمتابعة للمة السودانية للرجال في منطقة لانسنج الكبرى.
+    </p>
+    <div class="hero-actions">
+      <button class="btn btn-light" onclick="window.print()">🖨️ طباعة / حفظ كملف PDF</button>
+      <a class="btn btn-outline" href="#timeline">عرض الجدول الزمني ←</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <section id="overview">
+    <div class="section-heading">
+      <div>
+        <h2>1. نظرة عامة على الفعالية</h2>
+        <p>المعلومات الأساسية للفعالية في مكان واحد.</p>
+      </div>
+    </div>
+
+    <div class="card overview-card">
+      <div class="overview-grid">
+        <div class="overview-item">
+          <div class="label">اسم الفعالية</div>
+          <div class="value">اللمة السودانية للرجال 2026</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">التاريخ</div>
+          <div class="value">السبت 15 أغسطس 2026</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">وقت الفعالية</div>
+          <div class="value">2:00 ظهرًا – 6:30 مساءً</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">بدء التجهيز في الموقع</div>
+          <div class="value">يبدأ الساعة 9:00 صباحًا</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">الموقع</div>
+          <div class="value">John Patriarche Park – الجناح القريب من ملاعب البيكلبول</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">العنوان</div>
+          <div class="value">960 Alton Rd, East Lansing, MI 48823</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">الجهة المنظمة</div>
+          <div class="value">جمعية السودانيين في منطقة لانسنج الكبرى (GLSA)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="purpose">
+    <div class="section-heading">
+      <div>
+        <h2>2. أهداف اللمة</h2>
+        <p>ليست مجرد فعالية اجتماعية؛ بل فرصة للتواصل والاستماع والتنظيم والتخطيط.</p>
+      </div>
+    </div>
+
+    <div class="card purpose">
+      <p>
+        تهدف اللمة السودانية للرجال في منطقة لانسنج الكبرى إلى توفير بيئة أخوية
+        ومريحة تتيح لأفراد المجتمع السوداني:
+      </p>
+      <ul class="purpose-list">
+        <li>التواصل والتعارف وتقوية العلاقات بين أفراد المجتمع.</li>
+        <li>التعرّف على أنشطة وإنجازات الجمعية خلال العام الماضي.</li>
+        <li>مناقشة أولويات المجتمع وأهدافه المستقبلية.</li>
+        <li>طرح الأفكار والملاحظات والمخاوف والنقد البنّاء.</li>
+        <li>إتاحة فرص أكبر للمشاركة الفاعلة والعمل التطوعي.</li>
+        <li>الاستمتاع بالطعام والأنشطة والترفيه وروح الأخوة في أجواء مجتمعية.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="teams">
+    <div class="section-heading">
+      <div>
+        <h2>3. الفرق والمسؤوليات</h2>
+        <p>لكل فريق دور واضح قبل الفعالية وأثناءها وبعد انتهائها.</p>
+      </div>
+    </div>
+
+    <div class="teams">
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">1</div>
+            <div><h3>الفريق الأول — الحديقة والخدمات اللوجستية</h3></div>
+          </div>
+          <span class="lead">المسؤول: اللجنة المنظمة</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>قبل الفعالية</h4>
+              <ul class="clean">
+                <li>تأكيد حجز الجناح وترتيبات الفعالية.</li>
+                <li>التحقق من لوائح الحديقة، بما في ذلك استخدام شوايات الفحم وتحضير الطعام والتخلص من النفايات واستخدام المرافق.</li>
+                <li>إعداد مخطط الموقع للطاولات والمقاعد ومناطق الطعام والأنشطة والتجمع.</li>
+                <li>التأكد من توفر الطاولات والكراسي وحاويات النفايات وجميع المستلزمات المطلوبة.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>تجهيز الموقع</h4>
+              <ul class="clean">
+                <li>الحضور بحلول <strong>9:00 صباحًا</strong> لبدء تجهيز الموقع.</li>
+                <li>ترتيب الطاولات والمقاعد.</li>
+                <li>تجهيز مناطق تقديم الطعام والمشروبات.</li>
+                <li>تحديد وتجهيز منطقة الشواء.</li>
+                <li>تجهيز نظام الصوت والميكروفون، إذا لزم الأمر.</li>
+                <li>إجراء فحص نهائي للسلامة وجاهزية الموقع قبل وصول الضيوف.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>بعد الفعالية</h4>
+              <ul class="clean">
+                <li>تنسيق تنظيف الجناح والمنطقة المحيطة بالكامل.</li>
+                <li>جمع جميع النفايات والتخلص منها بالطريقة المناسبة.</li>
+                <li>إزالة أو إعادة الطاولات والكراسي والمعدات والمستلزمات حسب المطلوب.</li>
+                <li>إجراء تفقد نهائي للتأكد من ترك الحديقة نظيفة وفي حالة جيدة.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">2</div>
+            <div><h3>الفريق الثاني — الشواء والطعام</h3></div>
+          </div>
+          <span class="lead">المسؤول: اللجنة المنظمة</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>تحضير الطعام</h4>
+              <ul class="clean">
+                <li>شراء الكميات المطلوبة من لحم الضأن والدجاج.</li>
+                <li>تتبيل اللحوم قبل الفعالية بحوالي <strong>24 ساعة</strong>.</li>
+                <li>حفظ جميع اللحوم في ظروف تبريد مناسبة حتى موعد نقلها.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>النقل</h4>
+              <ul class="clean">
+                <li>نقل اللحوم إلى الحديقة في حافظات مبردة ومناسبة.</li>
+                <li>الحفاظ على درجات الحرارة المناسبة للطعام أثناء النقل والتحضير.</li>
+                <li>إحضار الفحم وأدوات الشواء والقفازات والصواني والقصدير وبقية مستلزمات الشواء.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>الشواء وسلامة الغذاء</h4>
+              <ul class="clean">
+                <li>تجهيز الشواية في المنطقة المخصصة.</li>
+                <li>إدارة إشعال الفحم واتباع إجراءات السلامة من الحريق.</li>
+                <li>وضع جدول للشواء لضمان تقديم الطعام بكفاءة.</li>
+                <li>متابعة تحضير الطعام ودرجات حرارة الطهي.</li>
+                <li>منع انتقال التلوث بين الأطعمة النيئة والمطهوة.</li>
+                <li>تغطية الطعام المطهو وحمايته حتى وقت التقديم.</li>
+                <li>التنسيق مع فريق المقبلات والأطباق الجانبية والمشروبات بشأن مواعيد التقديم.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">3</div>
+            <div><h3>الفريق الثالث — المقبلات والأطباق الجانبية والمشروبات</h3></div>
+          </div>
+          <span class="lead">المسؤول: اللجنة المنظمة</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>الطعام والأطباق الجانبية</h4>
+              <ul class="clean">
+                <li>تحضير السلطة الخضراء الطازجة (<em>سلطة خضراء</em>) صباح يوم الفعالية.</li>
+                <li>تحضير سلطة الخيار بالزبادي وغيرها من الأطباق الجانبية.</li>
+                <li>تجهيز الخبز العربي والصلصات والمقبلات ورقائق البطاطس وغيرها.</li>
+                <li>تحديد الكميات وفقًا لعدد الحضور المتوقع.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>المشروبات</h4>
+              <ul class="clean">
+                <li>توفير كمية كافية من مياه الشرب المعبأة.</li>
+                <li>توفير المشروبات الغازية والعصائر.</li>
+                <li>إعداد الشاي والقهوة إذا تم إدراجهما في البرنامج النهائي.</li>
+                <li>الحفاظ على محطة مخصصة للمشروبات طوال الفعالية.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>مستلزمات التقديم</h4>
+              <ul class="clean">
+                <li>أطباق بلاستيكية قوية للاستخدام مرة واحدة</li>
+                <li>أكواب</li>
+                <li>شوك وسكاكين وملاعق</li>
+                <li>مناديل</li>
+                <li>ملاعق وأدوات تقديم</li>
+                <li>صوانٍ وعبوات للطعام</li>
+                <li>ورق ألمنيوم ومواد تغليف بلاستيكية</li>
+                <li>أكياس نفايات وعبوات لحفظ الطعام</li>
+              </ul>
+            </div>
+          </div>
+          <div class="subcard" style="margin-top:18px;">
+            <h4>التقديم والتنظيم</h4>
+            <ul class="clean">
+              <li>تنظيم منطقة تقديم الطعام قبل وصول الضيوف.</li>
+              <li>التنسيق مع فريق الشواء لضمان تقديم الطعام في الوقت المناسب.</li>
+              <li>الحفاظ على مناطق التقديم نظيفة ومنظمة.</li>
+              <li>متابعة المستلزمات طوال الفعالية وإعادة تزويدها عند الحاجة.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">4</div>
+            <div><h3>الفريق الرابع — البرنامج وإدارة الحوار المجتمعي</h3></div>
+          </div>
+          <span class="lead">المسؤول: اللجنة المنظمة</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>التقرير السنوي للجمعية</h4>
+              <ul class="clean">
+                <li>إعداد عرض مختصر لمدة <strong>15 دقيقة</strong> يبرز أنشطة وإنجازات الجمعية.</li>
+                <li>يشمل أهم المبادرات والبرامج والأنشطة المجتمعية والإنجازات والإحصاءات ذات الصلة.</li>
+                <li>إعداد نسخة رقمية ونسخة مطبوعة.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>الحوار المجتمعي</h4>
+              <ul class="clean">
+                <li>تقديم أهداف اللمة وشرح الغرض منها.</li>
+                <li>إدارة نقاش مفتوح يسوده الاحترام.</li>
+                <li>تشجيع المشاركة من أصحاب وجهات النظر المختلفة.</li>
+                <li>الحفاظ على نقاش بنّاء ومركز على احتياجات المجتمع.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>آراء ومقترحات المجتمع</h4>
+              <ul class="clean">
+                <li><strong>تطبيق GLSA:</strong> إرسال الآراء والمقترحات عبر النموذج الرقمي المخصص.</li>
+                <li><strong>مباشرة:</strong> مشاركة التعليقات والمقترحات أثناء النقاش.</li>
+                <li><strong>الهاتف:</strong> التواصل مع ممثل الجمعية بعد الفعالية.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="responsibility-grid two" style="margin-top:18px;">
+            <div class="subcard">
+              <h4>الأولويات والأهداف المستقبلية</h4>
+              <ul class="clean">
+                <li>تسجيل وتنظيم القضايا والمقترحات التي طُرحت.</li>
+                <li>تحديد الموضوعات المتكررة وأولويات المجتمع.</li>
+                <li>تلخيص الأهداف المقترحة للعام القادم.</li>
+                <li>إعداد ملخص بعد الفعالية لقيادة الجمعية.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>العضوية والاشتراكات</h4>
+              <ul class="clean">
+                <li>شرح أهمية العضوية في الجمعية والغرض منها.</li>
+                <li>الإجابة عن الأسئلة أو المخاوف المتعلقة بالعضوية.</li>
+                <li>توضيح رسوم العضوية والغرض من استخدامها.</li>
+                <li>توفير آلية سهلة للانضمام إلى الجمعية أو تجديد العضوية.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">5</div>
+            <div><h3>الفريق الخامس — الألعاب والأنشطة الترفيهية</h3></div>
+          </div>
+          <span class="lead">المسؤول: اللجنة المنظمة</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>الرياضة والترفيه</h4>
+              <ul class="clean">
+                <li>كرة القدم ⚽</li>
+                <li>الكرة الطائرة 🏐</li>
+                <li>ألعاب خارجية أخرى</li>
+                <li>ألعاب الورق 🃏</li>
+                <li>ألعاب الطاولة 🎲</li>
+                <li>ألعاب اجتماعية أخرى مناسبة</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>المعدات</h4>
+              <ul class="clean">
+                <li>كرات قدم</li>
+                <li>كرات طائرة</li>
+                <li>شبكات عند الحاجة</li>
+                <li>ألعاب ورق</li>
+                <li>ألعاب طاولة</li>
+                <li>أقماع أو علامات تحديد</li>
+                <li>معدات ترفيهية أخرى</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>تنسيق الأنشطة</h4>
+              <ul class="clean">
+                <li>تنظيم أنشطة تناسب الأعمار والقدرات المختلفة.</li>
+                <li>تشجيع المشاركة دون تحويل الأنشطة إلى منافسات مفرطة.</li>
+                <li>التأكد من استخدام المعدات بصورة آمنة.</li>
+                <li>تنسيق الأنشطة مع مواعيد الوجبة والنقاش المجتمعي.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="section-heading">
+      <div>
+        <h2>4. الجدول الزمني المقترح للفعالية</h2>
+        <p>الجدول المقترح من بداية التجهيز وحتى التنظيف.</p>
+      </div>
+    </div>
+
+    <div class="card timeline">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:160px;">الوقت</th>
+            <th>النشاط</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="time">9:00 صباحًا</td><td>وصول الفريق المنظم وبدء تجهيز الموقع.</td></tr>
+          <tr><td class="time">9:00–11:30 صباحًا</td><td>تجهيز الطاولات والمقاعد ومنطقة الشواء ومحطات الطعام ونظام الصوت ومناطق الأنشطة.</td></tr>
+          <tr><td class="time">11:30 صباحًا–1:30 ظهرًا</td><td>تحضير الطعام واستكمال التجهيزات النهائية.</td></tr>
+          <tr><td class="time">1:30–2:00 ظهرًا</td><td>التفقد النهائي للموقع واجتماع تنسيق الفرق.</td></tr>
+          <tr><td class="time">2:00 ظهرًا</td><td><strong>وصول الضيوف / بداية اللمة.</strong></td></tr>
+          <tr><td class="time">2:00–3:00</td><td>الترحيب والتعارف والتواصل والأنشطة الترفيهية.</td></tr>
+          <tr><td class="time">3:00–3:15</td><td>كلمة ترحيبية والتقرير السنوي للجمعية.</td></tr>
+          <tr><td class="time">3:15–4:00</td><td>النقاش المجتمعي والاستماع إلى الآراء والمقترحات.</td></tr>
+          <tr><td class="time">4:00–5:30</td><td>وجبة الشواء والتواصل والأنشطة الترفيهية.</td></tr>
+          <tr><td class="time">5:30–6:15</td><td>استكمال النقاش المجتمعي والتواصل والأنشطة.</td></tr>
+          <tr><td class="time">6:15–6:30</td><td>كلمة الختام والشكر والتقدير.</td></tr>
+          <tr><td class="time">6:30 مساءً</td><td><strong>الختام الرسمي للمة.</strong></td></tr>
+          <tr><td class="time">6:30–7:30 مساءً</td><td>التنظيف وإعادة الموقع إلى حالته الأصلية.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="print-note">
+      يمكن تعديل الجدول الزمني وفقًا لتحضير الطعام وعدد الحضور وسير النقاش المجتمعي.
+    </p>
+  </section>
+
+  <section id="volunteers">
+    <div class="section-heading">
+      <div>
+        <h2>5. توقعات ومسؤوليات المتطوعين</h2>
+        <p>استخدم قائمة التحقق أثناء التجهيز والتنفيذ.</p>
+      </div>
+    </div>
+
+    <div class="card expectations">
+      <label class="check-item"><input type="checkbox"><span>الحضور في الوقت المحدد للمهمة.</span></label>
+      <label class="check-item"><input type="checkbox"><span>إنجاز المسؤوليات الموكلة.</span></label>
+      <label class="check-item"><input type="checkbox"><span>الإبلاغ سريعًا عن أي مشكلة أو تأخير.</span></label>
+      <label class="check-item"><input type="checkbox"><span>العمل بروح الفريق والتعاون مع بقية الفرق.</span></label>
+      <label class="check-item"><input type="checkbox"><span>معاملة جميع الحضور بالاحترام والكرم وحسن الضيافة.</span></label>
+      <label class="check-item"><input type="checkbox"><span>المساهمة في الحفاظ على بيئة أخوية ومرحبة بالجميع.</span></label>
+      <label class="check-item"><input type="checkbox"><span>إعطاء الأولوية للسلامة والنظافة والتنظيم.</span></label>
+      <label class="check-item"><input type="checkbox"><span>مساعدة الفرق الأخرى بعد إكمال المسؤوليات الأساسية.</span></label>
+    </div>
+  </section>
+
+  <section id="followup">
+    <div class="section-heading">
+      <div>
+        <h2>6. المتابعة بعد الفعالية</h2>
+        <p>تحويل مخرجات اللمة إلى خطوات عملية لخدمة المجتمع.</p>
+      </div>
+    </div>
+
+    <div class="card followup">
+      <ol class="steps">
+        <li>مراجعة جميع الآراء والمقترحات التي تم استلامها أثناء الفعالية.</li>
+        <li>مراجعة المشاركات التي وصلت عبر تطبيق GLSA.</li>
+        <li>تحديد أولويات المجتمع التي تكررت بصورة أكبر.</li>
+        <li>تصنيف المقترحات إلى أهداف قصيرة ومتوسطة وطويلة المدى.</li>
+        <li>إعداد ملخص شامل عن اللمة.</li>
+        <li>مشاركة النتائج المناسبة مع مجتمع GLSA بصورة أوسع.</li>
+        <li>تحديد المتطوعين والأعضاء الراغبين في المساهمة في مبادرات محددة.</li>
+        <li>تحديد الخطوات التالية والأشخاص أو الفرق المسؤولة عن الأولويات المتفق عليها.</li>
+      </ol>
+
+      <div class="outcome">
+        <strong>النتيجة المتوقعة</strong>
+        <p style="margin-bottom:0;">
+          لا ينبغي النظر إلى هذه اللمة باعتبارها فعالية اجتماعية فقط، بل يجب أن
+          تكون فرصة لـ<strong>الاستماع والتواصل والتنظيم ووضع خارطة طريق واضحة</strong>
+          لمستقبل جمعية السودانيين في منطقة لانسنج الكبرى وخدمة المجتمع السوداني.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <strong>اللمة السودانية للرجال 2026</strong><br>
+  جمعية السودانيين في منطقة لانسنج الكبرى • الخطة الرئيسية للفعالية ودليل التشغيل
+</footer>
+
+<script>
+  // Interactive volunteer checklist
+  document.querySelectorAll('.check-item input').forEach(input => {
+    input.addEventListener('change', () => {
+      input.closest('.check-item').classList.toggle('done', input.checked);
+    });
+  });
+</script>
+</body>
+</html>
