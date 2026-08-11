@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLSA Men’s Summer Gathering 2026 — Master Event Plan</title>
+<style>
+  :root {
+    --ink: #18212b;
+    --muted: #5f6b76;
+    --line: #dfe5ea;
+    --paper: #ffffff;
+    --bg: #f3f6f8;
+    --accent: #176b5b;
+    --accent-dark: #0e4d42;
+    --accent-soft: #e7f3ef;
+    --gold: #b58a3a;
+    --gold-soft: #faf3e5;
+    --danger: #a64242;
+    --shadow: 0 12px 30px rgba(24, 33, 43, .08);
+    --radius: 16px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  a { color: inherit; }
+  button { font: inherit; }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,.94);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .topbar-inner {
+    max-width: 1180px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: var(--accent);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+  }
+
+  .nav {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: var(--muted);
+    font-size: .86rem;
+    padding: 7px 10px;
+    border-radius: 8px;
+  }
+
+  .nav a:hover {
+    background: var(--accent-soft);
+    color: var(--accent-dark);
+  }
+
+  .hero {
+    background:
+      radial-gradient(circle at 90% 20%, rgba(181,138,58,.16), transparent 28%),
+      radial-gradient(circle at 10% 90%, rgba(23,107,91,.12), transparent 30%),
+      linear-gradient(135deg, #0e4d42, #176b5b);
+    color: #fff;
+    padding: 68px 20px 60px;
+  }
+
+  .hero-inner {
+    max-width: 1180px;
+    margin: auto;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 11px;
+    border: 1px solid rgba(255,255,255,.28);
+    border-radius: 999px;
+    background: rgba(255,255,255,.08);
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+  }
+
+  h1 {
+    margin: 18px 0 10px;
+    font-size: clamp(2.2rem, 5vw, 4.4rem);
+    line-height: 1.02;
+    letter-spacing: -.045em;
+    max-width: 900px;
+  }
+
+  .hero-subtitle {
+    max-width: 760px;
+    margin: 0;
+    color: rgba(255,255,255,.86);
+    font-size: 1.08rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
+
+  .btn {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 750;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-light {
+    background: #fff;
+    color: var(--accent-dark);
+  }
+
+  .btn-outline {
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.35);
+    background: rgba(255,255,255,.08);
+  }
+
+  main {
+    max-width: 1180px;
+    margin: -25px auto 70px;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  section {
+    scroll-margin-top: 80px;
+    margin-top: 30px;
+  }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .overview-card {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .overview-item {
+    padding: 22px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .overview-item:nth-child(3n) { border-right: 0; }
+  .overview-item:nth-last-child(-n+3) { border-bottom: 0; }
+
+  .label {
+    color: var(--muted);
+    text-transform: uppercase;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    margin-bottom: 4px;
+  }
+
+  .value {
+    font-weight: 750;
+  }
+
+  .section-heading {
+    margin: 0 0 14px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .section-heading h2 {
+    margin: 0;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    letter-spacing: -.025em;
+  }
+
+  .section-heading p {
+    margin: 3px 0 0;
+    color: var(--muted);
+    font-size: .94rem;
+  }
+
+  .purpose {
+    padding: 28px;
+  }
+
+  .purpose-list {
+    margin: 18px 0 0;
+    padding-left: 22px;
+  }
+
+  .purpose-list li { margin: 8px 0; }
+
+  .teams {
+    display: grid;
+    gap: 20px;
+  }
+
+  .team {
+    overflow: hidden;
+  }
+
+  .team-header {
+    padding: 22px 24px;
+    background: linear-gradient(135deg, var(--accent-soft), #fff);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .team-number {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: var(--accent);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    flex: 0 0 auto;
+  }
+
+  .team-title {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .team-title h3 {
+    margin: 0;
+    font-size: 1.18rem;
+  }
+
+  .lead {
+    white-space: nowrap;
+    font-size: .78rem;
+    font-weight: 800;
+    color: var(--accent-dark);
+    background: #fff;
+    border: 1px solid #c9e3dc;
+    padding: 6px 10px;
+    border-radius: 999px;
+  }
+
+  .team-body {
+    padding: 24px;
+  }
+
+  .responsibility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .responsibility-grid.two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subcard {
+    background: #fbfcfd;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px;
+  }
+
+  .subcard h4 {
+    margin: 0 0 10px;
+    font-size: .95rem;
+  }
+
+  ul.clean {
+    padding-left: 19px;
+    margin: 0;
+  }
+
+  ul.clean li { margin: 6px 0; }
+
+  .timeline {
+    padding: 8px 0 0;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 680px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--accent);
+    color: #fff;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+
+  tr:last-child td { border-bottom: 0; }
+  tbody tr:hover { background: #f8fbfa; }
+
+  .time {
+    white-space: nowrap;
+    font-weight: 800;
+    color: var(--accent-dark);
+  }
+
+  .expectations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 24px;
+  }
+
+  .check-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 13px 14px;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    background: #fff;
+  }
+
+  .check-item input {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    accent-color: var(--accent);
+  }
+
+  .check-item.done span {
+    text-decoration: line-through;
+    color: var(--muted);
+  }
+
+  .followup {
+    padding: 26px;
+  }
+
+  .steps {
+    counter-reset: steps;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: grid;
+    gap: 11px;
+  }
+
+  .steps li {
+    counter-increment: steps;
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    padding: 13px;
+    background: #fbfcfd;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+  }
+
+  .steps li::before {
+    content: counter(steps);
+    flex: 0 0 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--gold-soft);
+    color: #805d1c;
+    font-weight: 900;
+  }
+
+  .outcome {
+    margin-top: 20px;
+    padding: 20px;
+    border-left: 4px solid var(--gold);
+    background: var(--gold-soft);
+    border-radius: 0 12px 12px 0;
+  }
+
+  footer {
+    margin-top: 55px;
+    padding: 30px 20px 50px;
+    text-align: center;
+    color: var(--muted);
+    font-size: .86rem;
+  }
+
+  .print-note {
+    max-width: 1180px;
+    margin: 18px auto 0;
+    padding: 0 20px;
+    color: var(--muted);
+    font-size: .8rem;
+  }
+
+  @media (max-width: 850px) {
+    .nav { display: none; }
+    .overview-grid { grid-template-columns: repeat(2, 1fr); }
+    .overview-item:nth-child(3n) { border-right: 1px solid var(--line); }
+    .overview-item:nth-child(2n) { border-right: 0; }
+    .overview-item:nth-last-child(-n+3) { border-bottom: 1px solid var(--line); }
+    .overview-item:nth-last-child(-n+2) { border-bottom: 0; }
+    .responsibility-grid,
+    .responsibility-grid.two,
+    .expectations { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 560px) {
+    .hero { padding-top: 45px; }
+    .overview-grid { grid-template-columns: 1fr; }
+    .overview-item,
+    .overview-item:nth-child(2n),
+    .overview-item:nth-child(3n) {
+      border-right: 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .overview-item:last-child { border-bottom: 0; }
+    .team-header { flex-direction: column; }
+    .lead { align-self: flex-start; }
+    main { padding: 0 12px; }
+  }
+
+  @media print {
+    @page {
+      size: Letter;
+      margin: 0.55in;
+    }
+
+    body {
+      background: #fff;
+      font-size: 10.5pt;
+    }
+
+    .topbar,
+    .hero-actions,
+    .print-note {
+      display: none !important;
+    }
+
+    .hero {
+      color: #000;
+      background: #fff;
+      padding: 10px 0 18px;
+      border-bottom: 2px solid #000;
+    }
+
+    .hero .eyebrow {
+      color: #000;
+      border: 1px solid #999;
+      background: #fff;
+    }
+
+    .hero-subtitle { color: #333; }
+
+    main {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .card {
+      box-shadow: none;
+      border: 1px solid #bbb;
+    }
+
+    section { margin-top: 18px; }
+
+    .team,
+    .subcard,
+    .section-heading,
+    .overview-card,
+    table,
+    .purpose,
+    .followup,
+    .outcome {
+      break-inside: avoid;
+    }
+
+    .team-header {
+      background: #f3f3f3;
+      color: #000;
+    }
+
+    th {
+      background: #eee;
+      color: #000;
+      border-bottom: 1px solid #888;
+    }
+
+    a { text-decoration: none; }
+    footer { padding-bottom: 0; }
+  }
+</style>
+</head>
+
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark">G</div>
+      <span>GLSA • Summer Gathering 2026</span>
+    </div>
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#overview">Overview</a>
+      <a href="#purpose">Purpose</a>
+      <a href="#teams">Teams</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#volunteers">Volunteers</a>
+      <a href="#followup">Follow-Up</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Greater Lansing Sudanese Association</span>
+    <h1>Men’s Summer Gathering 2026</h1>
+    <p class="hero-subtitle">
+      Master Event Plan & Operations Guide — a practical guide for planning,
+      coordinating, delivering, and following up on the GLSA Men’s Summer Gathering.
+    </p>
+    <div class="hero-actions">
+      <button class="btn btn-light" onclick="window.print()">🖨️ Print / Save PDF</button>
+      <a class="btn btn-outline" href="#timeline">View Event Timeline →</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <section id="overview">
+    <div class="section-heading">
+      <div>
+        <h2>1. Event Overview</h2>
+        <p>Core event information at a glance.</p>
+      </div>
+    </div>
+
+    <div class="card overview-card">
+      <div class="overview-grid">
+        <div class="overview-item">
+          <div class="label">Event Name</div>
+          <div class="value">GLSA Men’s Summer Gathering 2026</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">Date</div>
+          <div class="value">Saturday, August 15, 2026</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">Event Time</div>
+          <div class="value">2:00 PM – 6:30 PM</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">On-Site Setup</div>
+          <div class="value">Begins at 9:00 AM</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">Location</div>
+          <div class="value">John Patriarche Park – Pavilion near the Pickleball Courts</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">Address</div>
+          <div class="value">960 Alton Rd, East Lansing, MI 48823</div>
+        </div>
+        <div class="overview-item">
+          <div class="label">Organizing Body</div>
+          <div class="value">Greater Lansing Sudanese Association (GLSA)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="purpose">
+    <div class="section-heading">
+      <div>
+        <h2>2. Purpose of the Gathering</h2>
+        <p>Beyond a social event: connect, listen, organize, and plan.</p>
+      </div>
+    </div>
+
+    <div class="card purpose">
+      <p>
+        The GLSA Men’s Summer Gathering is designed to provide a welcoming,
+        informal environment where members of the Sudanese community can:
+      </p>
+      <ul class="purpose-list">
+        <li>Connect, socialize, and strengthen relationships.</li>
+        <li>Learn about GLSA’s activities and accomplishments during the past year.</li>
+        <li>Discuss the community’s priorities and future goals.</li>
+        <li>Share ideas, concerns, and constructive feedback.</li>
+        <li>Identify opportunities for greater community participation and volunteerism.</li>
+        <li>Enjoy food, recreation, and fellowship in a community setting.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="teams">
+    <div class="section-heading">
+      <div>
+        <h2>3. Teams, Leadership & Responsibilities</h2>
+        <p>Each team has a clear operational role before, during, and after the event.</p>
+      </div>
+    </div>
+
+    <div class="teams">
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">1</div>
+            <div><h3>Park & Logistics</h3></div>
+          </div>
+          <span class="lead">Lead: Organizing Committee</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>Before the Event</h4>
+              <ul class="clean">
+                <li>Confirm the pavilion reservation and event arrangements.</li>
+                <li>Verify park regulations, including charcoal grills, food preparation, waste disposal, and facility use.</li>
+                <li>Develop the site layout for tables, seating, food service, activities, and gathering areas.</li>
+                <li>Confirm availability of tables, chairs, trash receptacles, and required supplies.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Event Setup</h4>
+              <ul class="clean">
+                <li>Arrive by <strong>9:00 AM</strong> for site preparation.</li>
+                <li>Arrange tables and seating.</li>
+                <li>Set up food-service and beverage areas.</li>
+                <li>Establish the designated grilling area.</li>
+                <li>Set up the sound system and microphone, if applicable.</li>
+                <li>Complete a safety and readiness check before guests arrive.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>After the Event</h4>
+              <ul class="clean">
+                <li>Coordinate complete cleanup of the pavilion and surrounding area.</li>
+                <li>Collect and dispose of all trash appropriately.</li>
+                <li>Remove or return tables, chairs, equipment, and other materials as required.</li>
+                <li>Conduct a final inspection to ensure the park is left clean and in good condition.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">2</div>
+            <div><h3>BBQ & Culinary</h3></div>
+          </div>
+          <span class="lead">Lead: Organizing Committee</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>Food Preparation</h4>
+              <ul class="clean">
+                <li>Purchase the required quantities of lamb and chicken.</li>
+                <li>Marinate the meat approximately <strong>24 hours before the event</strong>.</li>
+                <li>Store all meat under appropriate refrigerated conditions until transportation.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Transportation</h4>
+              <ul class="clean">
+                <li>Transport meat to the park in properly chilled/refrigerated coolers.</li>
+                <li>Maintain appropriate food temperatures during transportation and preparation.</li>
+                <li>Bring charcoal, grilling tools, gloves, trays, foil, and other BBQ supplies.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Grilling & Food Safety</h4>
+              <ul class="clean">
+                <li>Set up the grill in the designated area.</li>
+                <li>Manage charcoal ignition and fire safety.</li>
+                <li>Establish a grilling schedule for efficient service.</li>
+                <li>Monitor food preparation and cooking temperatures.</li>
+                <li>Prevent cross-contamination between raw and cooked foods.</li>
+                <li>Keep cooked food covered and protected until serving.</li>
+                <li>Coordinate serving times with the Sides & Refreshments Team.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">3</div>
+            <div><h3>Appetizers, Sides & Refreshments</h3></div>
+          </div>
+          <span class="lead">Lead: Organizing Committee</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>Food & Side Dishes</h4>
+              <ul class="clean">
+                <li>Prepare fresh green salad (<em>Salata Khadra</em>) on the morning of the event.</li>
+                <li>Prepare cucumber-yogurt salad and other planned side dishes.</li>
+                <li>Arrange pita bread, dips, chips, and other appetizers.</li>
+                <li>Coordinate quantities based on expected attendance.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Beverages</h4>
+              <ul class="clean">
+                <li>Provide sufficient bottled water.</li>
+                <li>Provide sodas and juices.</li>
+                <li>Prepare tea and coffee, if included in the final program.</li>
+                <li>Maintain a designated beverage station throughout the event.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Serving Supplies</h4>
+              <ul class="clean">
+                <li>Heavy-duty disposable plates</li>
+                <li>Cups</li>
+                <li>Forks, knives, and spoons</li>
+                <li>Napkins</li>
+                <li>Serving spoons and utensils</li>
+                <li>Food trays and containers</li>
+                <li>Aluminum foil/plastic wrap</li>
+                <li>Trash bags and food-storage containers</li>
+              </ul>
+            </div>
+          </div>
+          <div class="subcard" style="margin-top:18px;">
+            <h4>Serving & Presentation</h4>
+            <ul class="clean">
+              <li>Organize the food-service area before guests arrive.</li>
+              <li>Coordinate with the BBQ Team so food is served promptly.</li>
+              <li>Keep serving areas clean and organized.</li>
+              <li>Monitor supplies throughout the event and replenish as needed.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">4</div>
+            <div><h3>Program & Community Facilitation</h3></div>
+          </div>
+          <span class="lead">Lead: Organizing Committee</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>GLSA Annual Update</h4>
+              <ul class="clean">
+                <li>Prepare a concise <strong>15-minute presentation</strong> highlighting GLSA’s activities and accomplishments.</li>
+                <li>Include major initiatives, programs, community activities, achievements, and relevant statistics.</li>
+                <li>Prepare both digital and printed versions.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Community Discussion</h4>
+              <ul class="clean">
+                <li>Introduce the purpose and objectives of the gathering.</li>
+                <li>Facilitate an open and respectful discussion.</li>
+                <li>Encourage participation from members with different perspectives.</li>
+                <li>Keep discussion constructive and focused on community needs.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Community Feedback</h4>
+              <ul class="clean">
+                <li><strong>GLSA App:</strong> Submit feedback through a designated digital form.</li>
+                <li><strong>In-Person:</strong> Share comments during the discussion.</li>
+                <li><strong>Phone:</strong> Contact a designated GLSA representative after the event.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="responsibility-grid two" style="margin-top:18px;">
+            <div class="subcard">
+              <h4>Priorities & Future Goals</h4>
+              <ul class="clean">
+                <li>Record and organize issues and suggestions raised.</li>
+                <li>Identify recurring themes and community priorities.</li>
+                <li>Summarize proposed goals for the upcoming year.</li>
+                <li>Develop a post-event summary for GLSA leadership.</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Membership & Dues</h4>
+              <ul class="clean">
+                <li>Explain the importance and purpose of GLSA membership.</li>
+                <li>Address common questions or concerns regarding membership.</li>
+                <li>Provide clear information about membership dues and their purpose.</li>
+                <li>Provide an easy mechanism for members to join or renew.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card team">
+        <div class="team-header">
+          <div class="team-title">
+            <div class="team-number">5</div>
+            <div><h3>Games & Recreational Activities</h3></div>
+          </div>
+          <span class="lead">Lead: Organizing Committee</span>
+        </div>
+        <div class="team-body">
+          <div class="responsibility-grid">
+            <div class="subcard">
+              <h4>Sports & Recreation</h4>
+              <ul class="clean">
+                <li>Soccer ⚽</li>
+                <li>Volleyball 🏐</li>
+                <li>Other outdoor games</li>
+                <li>Playing cards 🃏</li>
+                <li>Board games 🎲</li>
+                <li>Other culturally appropriate social games</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Equipment</h4>
+              <ul class="clean">
+                <li>Soccer balls</li>
+                <li>Volleyballs</li>
+                <li>Nets, if needed</li>
+                <li>Playing cards</li>
+                <li>Board games</li>
+                <li>Cones or markers</li>
+                <li>Other recreational equipment</li>
+              </ul>
+            </div>
+            <div class="subcard">
+              <h4>Activity Coordination</h4>
+              <ul class="clean">
+                <li>Organize activities for different ages and abilities.</li>
+                <li>Encourage participation without making activities overly competitive.</li>
+                <li>Ensure equipment is used safely.</li>
+                <li>Coordinate activities around the meal and community discussion schedule.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="section-heading">
+      <div>
+        <h2>4. Preliminary Event Timeline</h2>
+        <p>Suggested schedule from setup through cleanup.</p>
+      </div>
+    </div>
+
+    <div class="card timeline">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:160px;">Time</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="time">9:00 AM</td><td>Organizing team arrives; site setup begins.</td></tr>
+          <tr><td class="time">9:00–11:30 AM</td><td>Tables, seating, BBQ area, food stations, sound system, and activity areas are set up.</td></tr>
+          <tr><td class="time">11:30 AM–1:30 PM</td><td>Food preparation and final setup.</td></tr>
+          <tr><td class="time">1:30–2:00 PM</td><td>Final site inspection and team briefing.</td></tr>
+          <tr><td class="time">2:00 PM</td><td><strong>Guests arrive / Gathering begins.</strong></td></tr>
+          <tr><td class="time">2:00–3:00 PM</td><td>Welcome, socializing, networking, and recreational activities.</td></tr>
+          <tr><td class="time">3:00–3:15 PM</td><td>Welcome remarks and GLSA annual update.</td></tr>
+          <tr><td class="time">3:15–4:00 PM</td><td>Community discussion and feedback.</td></tr>
+          <tr><td class="time">4:00–5:30 PM</td><td>BBQ meal, socializing, and recreational activities.</td></tr>
+          <tr><td class="time">5:30–6:15 PM</td><td>Additional community discussion, networking, and activities.</td></tr>
+          <tr><td class="time">6:15–6:30 PM</td><td>Closing remarks and appreciation.</td></tr>
+          <tr><td class="time">6:30 PM</td><td><strong>Official gathering concludes.</strong></td></tr>
+          <tr><td class="time">6:30–7:30 PM</td><td>Cleanup and site restoration.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="print-note">
+      The timeline can be adjusted based on food preparation, attendance, and the flow of the community discussion.
+    </p>
+  </section>
+
+  <section id="volunteers">
+    <div class="section-heading">
+      <div>
+        <h2>5. General Volunteer Expectations</h2>
+        <p>Use the checklist during event preparation and operations.</p>
+      </div>
+    </div>
+
+    <div class="card expectations">
+      <label class="check-item"><input type="checkbox"><span>Arrive at the assigned time.</span></label>
+      <label class="check-item"><input type="checkbox"><span>Complete assigned responsibilities.</span></label>
+      <label class="check-item"><input type="checkbox"><span>Communicate promptly about problems or delays.</span></label>
+      <label class="check-item"><input type="checkbox"><span>Work collaboratively with other teams.</span></label>
+      <label class="check-item"><input type="checkbox"><span>Treat all attendees with respect and hospitality.</span></label>
+      <label class="check-item"><input type="checkbox"><span>Help maintain a welcoming and inclusive environment.</span></label>
+      <label class="check-item"><input type="checkbox"><span>Prioritize safety, cleanliness, and organization.</span></label>
+      <label class="check-item"><input type="checkbox"><span>Assist other teams when primary responsibilities are complete.</span></label>
+    </div>
+  </section>
+
+  <section id="followup">
+    <div class="section-heading">
+      <div>
+        <h2>6. Post-Event Follow-Up</h2>
+        <p>Turn the gathering into measurable community action.</p>
+      </div>
+    </div>
+
+    <div class="card followup">
+      <ol class="steps">
+        <li>Review all feedback received during the event.</li>
+        <li>Review submissions received through the GLSA app.</li>
+        <li>Identify the most frequently mentioned community priorities.</li>
+        <li>Organize suggestions into short-, medium-, and long-term goals.</li>
+        <li>Prepare a summary of the gathering.</li>
+        <li>Share appropriate outcomes with the broader GLSA community.</li>
+        <li>Identify volunteers and members interested in specific initiatives.</li>
+        <li>Establish next steps and responsible individuals or teams for agreed-upon priorities.</li>
+      </ol>
+
+      <div class="outcome">
+        <strong>Proposed Outcome</strong>
+        <p style="margin-bottom:0;">
+          The gathering should not be viewed simply as a social event. It should
+          serve as an opportunity to <strong>listen, connect, organize, and establish
+          a clear roadmap</strong> for the future of GLSA and the Sudanese community
+          in Greater Lansing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <strong>GLSA Men’s Summer Gathering 2026</strong><br>
+  Greater Lansing Sudanese Association • Master Event Plan & Operations Guide
+</footer>
+
+<script>
+  // Interactive volunteer checklist
+  document.querySelectorAll('.check-item input').forEach(input => {
+    input.addEventListener('change', () => {
+      input.closest('.check-item').classList.toggle('done', input.checked);
+    });
+  });
+</script>
+</body>
+</html>
