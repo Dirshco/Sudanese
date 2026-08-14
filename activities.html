@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GLSA Activities and Future Plans 2026 - Greater Lansing Sudanese Association">
+<title>GLSA | Activities & Future Plans 2026</title>
+<style>
+  :root{
+    --primary:#174a3b;
+    --secondary:#b28a3b;
+    --accent:#d9b86c;
+    --light:#f7f4ed;
+    --dark:#18312a;
+    --text:#26352f;
+    --white:#fff;
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--text);
+    background:#f5f7f5;
+    line-height:1.65;
+  }
+  body.rtl{font-family:"Segoe UI", Tahoma, Arial, sans-serif}
+  .hero{
+    background:linear-gradient(135deg,#123b30 0%,#1d604c 55%,#8e6a2f 100%);
+    color:#fff;
+    padding:70px 20px 55px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero:before{
+    content:"";
+    position:absolute;inset:-80px;
+    background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.12),transparent 25%),
+               radial-gradient(circle at 80% 70%,rgba(255,255,255,.10),transparent 25%);
+  }
+  .hero-content{position:relative;max-width:1050px;margin:auto}
+  .logo{
+    width:82px;height:82px;border:3px solid rgba(255,255,255,.75);
+    border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;
+    font-size:25px;font-weight:800;letter-spacing:1px;
+    background:rgba(255,255,255,.12);
+  }
+  h1{font-size:clamp(2rem,5vw,3.4rem);margin:0 0 10px;line-height:1.15}
+  .subtitle{font-size:1.15rem;opacity:.92;margin:0 auto;max-width:800px}
+  .controls{
+    position:sticky;top:0;z-index:20;
+    background:rgba(255,255,255,.96);backdrop-filter:blur(12px);
+    border-bottom:1px solid #ddd;
+    padding:12px 20px;
+  }
+  .controls-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:15px}
+  .nav{display:flex;gap:8px;flex-wrap:wrap}
+  button,.nav a{
+    border:0;background:var(--primary);color:white;border-radius:999px;
+    padding:10px 16px;font-weight:700;cursor:pointer;text-decoration:none;
+    transition:.2s;
+  }
+  button:hover,.nav a:hover{transform:translateY(-1px);opacity:.9}
+  .lang-btn{background:var(--secondary)}
+  main{max-width:1100px;margin:42px auto;padding:0 20px}
+  .intro{
+    background:#fff;border-radius:var(--radius);padding:28px 30px;
+    box-shadow:var(--shadow);margin-bottom:28px;border-left:5px solid var(--secondary);
+  }
+  body.rtl .intro{border-left:0;border-right:5px solid var(--secondary)}
+  .section{
+    background:#fff;border-radius:var(--radius);padding:32px;
+    margin:25px 0;box-shadow:var(--shadow);
+  }
+  .section-title{
+    display:flex;align-items:center;gap:13px;
+    color:var(--primary);margin:0 0 24px;font-size:1.65rem;
+  }
+  .section-title .num{
+    width:42px;height:42px;border-radius:12px;background:var(--light);
+    display:grid;place-items:center;color:var(--secondary);font-weight:800;
+  }
+  .subsection{
+    margin:27px 0 0;padding:22px;
+    background:#fafbf9;border:1px solid #e5e9e5;border-radius:15px;
+  }
+  .subsection h3{margin-top:0;color:var(--primary);font-size:1.25rem}
+  ol,ul{padding-left:25px}
+  body.rtl ol,body.rtl ul{padding-left:0;padding-right:25px}
+  li{margin:10px 0}
+  .highlight{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:14px;margin:25px 0;
+  }
+  .stat{
+    padding:20px;background:var(--light);border-radius:14px;text-align:center;
+    border-top:3px solid var(--secondary);
+  }
+  .stat strong{display:block;font-size:1.9rem;color:var(--primary)}
+  .event{
+    background:linear-gradient(135deg,#f8f5eb,#fff);
+    border:1px solid #e8dfc9;border-radius:16px;padding:25px;margin-top:15px;
+  }
+  .event h3{margin-top:0;color:var(--primary)}
+  .footer{
+    margin-top:50px;background:var(--dark);color:#fff;text-align:center;padding:35px 20px;
+  }
+  .footer p{margin:5px 0;opacity:.9}
+  .arabic{display:none}
+  body.rtl .english{display:none}
+  body.rtl .arabic{display:block}
+  .fade{animation:fade .45s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @media(max-width:700px){
+    .hero{padding:50px 18px 40px}
+    .section{padding:22px}
+    .intro{padding:22px}
+    .controls-inner{justify-content:center}
+    .nav{display:none}
+  }
+  @media print{
+    .controls{display:none}
+    .hero{padding:30px}
+    .section,.intro{box-shadow:none;border:1px solid #ddd}
+  }
+</style>
+</head>
+
+<body>
+<header class="hero">
+  <div class="hero-content">
+    <div class="logo">GLSA</div>
+
+    <div class="english">
+      <h1>GLSA Activities & Future Plans</h1>
+      <p class="subtitle">Greater Lansing Sudanese Association — 2026 Community Report</p>
+    </div>
+
+    <div class="arabic" dir="rtl">
+      <h1>أنشطة وخطط جالية السودانيين في منطقة لانسنغ الكبرى</h1>
+      <p class="subtitle">تقرير أنشطة المجتمع لعام 2026</p>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="nav">
+      <a href="#completed" class="english">Completed Activities</a>
+      <a href="#future" class="english">Future Plans</a>
+      <a href="#completed" class="arabic">الأنشطة المنجزة</a>
+      <a href="#future" class="arabic">الخطط المستقبلية</a>
+    </div>
+    <button class="lang-btn" onclick="toggleLanguage()" id="langButton">العربية</button>
+  </div>
+</div>
+
+<main id="content" class="fade">
+
+  <div class="intro english">
+    <strong>Overview:</strong> Since January 2026, GLSA has made significant progress in organizational development,
+    community engagement, and educational programming.
+  </div>
+
+  <div class="intro arabic" dir="rtl">
+    <strong>نظرة عامة:</strong> منذ يناير 2026، حققت جالية السودانيين في منطقة لانسنغ الكبرى
+    تقدماً ملحوظاً في التطوير التنظيمي، والتواصل المجتمعي، والبرامج والأنشطة التعليمية.
+  </div>
+
+  <div class="highlight">
+    <div class="stat"><strong>2</strong><span class="english">Higher Education & Scholarship Webinars</span><span class="arabic" dir="rtl">ندوتان عن التعليم والمنح الدراسية</span></div>
+    <div class="stat"><strong>150+</strong><span class="english">Participants per webinar</span><span class="arabic" dir="rtl">مشارك في كل ندوة</span></div>
+    <div class="stat"><strong>150+</strong><span class="english">Medical Careers Seminar Participants</span><span class="arabic" dir="rtl">مشارك في ندوة المهن الطبية</span></div>
+  </div>
+
+  <section class="section" id="completed">
+    <div class="english">
+      <h2 class="section-title"><span class="num">A</span>Organizational, Technical & Legal Development</h2>
+      <ol>
+        <li><strong>State Registration:</strong> Completed the registration of the Association (Al-Jalya) with the State.</li>
+        <li><strong>Federal Tax Identification:</strong> Obtained the Federal Tax Identification Number (EIN).</li>
+        <li><strong>Bank Account:</strong> Opened an official bank account for the Association.</li>
+        <li><strong>Community Partnerships:</strong> Reached out to other organizations and community partners to seek collaboration, guidance, and additional support.</li>
+      </ol>
+    </div>
+
+    <div class="arabic" dir="rtl">
+      <h2 class="section-title"><span class="num">أ</span>التطوير التنظيمي والفني والقانوني</h2>
+      <ol>
+        <li><strong>التسجيل على مستوى الولاية:</strong> تم الانتهاء من تسجيل الجالية (الجالية) لدى الولاية.</li>
+        <li><strong>الرقم الضريبي الفيدرالي:</strong> تم الحصول على رقم التعريف الضريبي الفيدرالي (EIN).</li>
+        <li><strong>الحساب البنكي:</strong> تم فتح حساب بنكي رسمي باسم الجالية.</li>
+        <li><strong>الشراكات المجتمعية:</strong> تم التواصل مع عدد من المنظمات والشركاء المجتمعيين بهدف التعاون والحصول على الإرشاد والدعم الإضافي.</li>
+      </ol>
+    </div>
+
+    <div class="english">
+      <h2 class="section-title"><span class="num">B</span>Social & Community Activities</h2>
+      <ol>
+        <li><strong>Ramadan Iftar:</strong> Organized a successful community Ramadan Iftar.</li>
+        <li><strong>Eid Gathering:</strong> Organized an Eid community gathering at a local park.</li>
+        <li><strong>Community Support:</strong> Conducted visits and provided support to individuals and families facing illness or difficult circumstances.</li>
+        <li><strong>Daleel Initiative:</strong> Established and initiated the search for <em>Daleel</em> to help provide useful information and resources to the Sudanese community.</li>
+        <li><strong>Youth Engagement:</strong> Encouraged families and youth to participate in the Sudanese Soccer Tournament in New York City, promoting community engagement and youth activities.</li>
+      </ol>
+    </div>
+
+    <div class="arabic" dir="rtl">
+      <h2 class="section-title"><span class="num">ب</span>الأنشطة الاجتماعية والمجتمعية</h2>
+      <ol>
+        <li><strong>إفطار رمضان:</strong> تنظيم إفطار رمضاني مجتمعي ناجح.</li>
+        <li><strong>احتفال العيد:</strong> تنظيم تجمع مجتمعي بمناسبة عيد الفطر في إحدى الحدائق المحلية.</li>
+        <li><strong>الدعم المجتمعي:</strong> القيام بزيارات وتقديم الدعم للأفراد والأسر الذين يمرون بظروف صحية أو صعوبات مختلفة.</li>
+        <li><strong>مبادرة دليل:</strong> البدء في إعداد والبحث عن "دليل" لتوفير المعلومات والموارد المفيدة لأفراد الجالية السودانية.</li>
+        <li><strong>إشراك الشباب:</strong> تشجيع الأسر والشباب على المشاركة في بطولة كرة القدم السودانية في مدينة نيويورك، دعماً للتواصل المجتمعي والأنشطة الشبابية.</li>
+      </ol>
+    </div>
+
+    <div class="english">
+      <h2 class="section-title"><span class="num">C</span>Educational Activities</h2>
+      <ol>
+        <li><strong>Higher Education & Scholarships:</strong> Organized two successful webinars focused on scholarships and higher education opportunities for high-school students and their families. Each webinar attracted <strong>more than 150 participants</strong>.</li>
+        <li><strong>Food Safety Education:</strong> Organized an educational session addressing food safety in the United States, providing practical information relevant to community members.</li>
+        <li><strong>Medical Careers Seminar:</strong> Organized a seminar on careers in the medical and healthcare fields for individuals interested in pursuing healthcare-related careers. The event attracted <strong>more than 150 participants</strong>.</li>
+      </ol>
+    </div>
+
+    <div class="arabic" dir="rtl">
+      <h2 class="section-title"><span class="num">ج</span>الأنشطة التعليمية</h2>
+      <ol>
+        <li><strong>التعليم العالي والمنح الدراسية:</strong> تنظيم ندوتين ناجحتين حول المنح الدراسية وفرص التعليم العالي لطلاب المدارس الثانوية وأسرهم، وشارك في كل ندوة <strong>أكثر من 150 شخصاً</strong>.</li>
+        <li><strong>التوعية بسلامة الغذاء:</strong> تنظيم نشاط تعليمي حول سلامة الغذاء في الولايات المتحدة، وتقديم معلومات عملية ومفيدة لأفراد المجتمع.</li>
+        <li><strong>ندوة المهن الطبية:</strong> تنظيم ندوة حول فرص العمل والمهن في المجال الطبي والرعاية الصحية للمهتمين بهذا المجال، وشارك فيها <strong>أكثر من 150 شخصاً</strong>.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="future">
+    <div class="english">
+      <h2 class="section-title"><span class="num">A</span>Future Organizational, Legal & Financial Goals</h2>
+
+      <div class="subsection">
+        <h3>1. Federal Nonprofit Recognition</h3>
+        <p>The next major organizational goal is to pursue <strong>federal nonprofit recognition and tax-exempt status</strong>, such as <strong>501(c)(3)</strong> recognition, if appropriate for the Association.</p>
+        <p>This status would strengthen GLSA's ability to:</p>
+        <ul>
+          <li>Accept tax-deductible charitable donations, where applicable.</li>
+          <li>Provide donors with appropriate documentation for tax purposes.</li>
+          <li>Apply for grants and funding opportunities.</li>
+          <li>Establish stronger partnerships with governmental agencies, foundations, and other nonprofit organizations.</li>
+          <li>Expand and sustain community programs.</li>
+        </ul>
+        <p>Obtaining federal nonprofit status will require additional <strong>time, documentation, professional assistance, and financial resources</strong>.</p>
+      </div>
+
+      <div class="subsection">
+        <h3>2. Pursuing Federal & State Funding</h3>
+        <p>Once the Association obtains the appropriate federal nonprofit and tax-exempt status, GLSA will explore opportunities to apply for:</p>
+        <ul>
+          <li>Federal grants and community development funds.</li>
+          <li>State of Michigan funding opportunities.</li>
+          <li>Local government and community grants.</li>
+          <li>Foundation and nonprofit funding.</li>
+          <li>Corporate and community sponsorships.</li>
+        </ul>
+        <p>These resources can help GLSA expand its educational, social, youth, and community-support programs.</p>
+      </div>
+    </div>
+
+    <div class="arabic" dir="rtl">
+      <h2 class="section-title"><span class="num">أ</span>الأهداف التنظيمية والقانونية والمالية المستقبلية</h2>
+
+      <div class="subsection">
+        <h3>1. الحصول على الاعتراف الفيدرالي كمنظمة غير ربحية</h3>
+        <p>يتمثل أحد الأهداف الرئيسية القادمة في السعي للحصول على <strong>الاعتراف الفيدرالي كمنظمة غير ربحية والإعفاء الضريبي</strong>، مثل الحصول على تصنيف <strong>501(c)(3)</strong>، إذا كان ذلك مناسباً للجالية.</p>
+        <p>سيساعد هذا الوضع الجالية على:</p>
+        <ul>
+          <li>قبول التبرعات الخيرية القابلة للخصم الضريبي، وفقاً للقوانين المعمول بها.</li>
+          <li>توفير المستندات المناسبة للمتبرعين لأغراضهم الضريبية.</li>
+          <li>التقدم للحصول على المنح ومصادر التمويل المختلفة.</li>
+          <li>بناء شراكات أقوى مع الجهات الحكومية والمؤسسات والمنظمات غير الربحية.</li>
+          <li>توسيع واستدامة البرامج المجتمعية.</li>
+        </ul>
+        <p>ويتطلب الحصول على الوضع الفيدرالي كمنظمة غير ربحية مزيداً من <strong>الوقت والمستندات والمساعدة المهنية والموارد المالية</strong>.</p>
+      </div>
+
+      <div class="subsection">
+        <h3>2. السعي للحصول على التمويل الفيدرالي وتمويل الولاية</h3>
+        <p>بعد الحصول على الوضع المناسب كمنظمة غير ربحية ومعفاة من الضرائب، ستعمل الجالية على استكشاف فرص التقدم للحصول على:</p>
+        <ul>
+          <li>المنح الفيدرالية وبرامج تطوير المجتمع.</li>
+          <li>فرص التمويل من ولاية ميشيغان.</li>
+          <li>المنح المحلية والحكومية والمجتمعية.</li>
+          <li>تمويل المؤسسات والمنظمات غير الربحية.</li>
+          <li>رعاية الشركات وأفراد المجتمع.</li>
+        </ul>
+        <p>ويمكن لهذه الموارد أن تساعد الجالية في توسيع برامجها التعليمية والاجتماعية وبرامج الشباب والدعم المجتمعي.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="english">
+        <h2 class="section-title"><span class="num">B</span>Social & Community Development</h2>
+        <h3>Sudanese Community Day</h3>
+        <p>GLSA plans to establish an annual <strong>“Sudanese Day”</strong> or community open day, tentatively planned for <strong>December or January</strong>.</p>
+        <p>The event could serve as a major community celebration and may include:</p>
+        <ul>
+          <li>🎓 Celebrating the graduations and academic achievements of our children and youth.</li>
+          <li>🇸🇩 Showcasing Sudanese culture, traditions, and folklore.</li>
+          <li>🎶 Sudanese music and cultural performances.</li>
+          <li>🍲 Traditional Sudanese food and community meals.</li>
+          <li>🛍️ A community bazaar featuring Sudanese products and small businesses.</li>
+          <li>👨‍👩‍👧‍👦 Family-oriented activities and entertainment.</li>
+          <li>⚽ Youth and children's activities.</li>
+          <li>🤝 Opportunities for community organizations and local partners to participate.</li>
+          <li>🏆 Recognition of outstanding community, educational, and youth achievements.</li>
+        </ul>
+        <p>The goal is to make <strong>Sudanese Day</strong> an annual event that brings families and generations together, celebrates community achievements, preserves Sudanese culture, and strengthens connections among Sudanese families in Greater Lansing.</p>
+      </div>
+
+      <div class="arabic" dir="rtl">
+        <h2 class="section-title"><span class="num">ب</span>التنمية الاجتماعية والمجتمعية</h2>
+        <h3>يوم السودان للجالية</h3>
+        <p>تخطط الجالية لإقامة فعالية سنوية تحت اسم <strong>«يوم السودان»</strong> أو اليوم المفتوح للجالية، ومن المقترح تنظيمها خلال <strong>ديسمبر أو يناير</strong>.</p>
+        <p>ويمكن أن تتضمن الفعالية:</p>
+        <ul>
+          <li>🎓 الاحتفال بتخرج أبنائنا وبناتنا والاحتفاء بإنجازاتهم الأكاديمية.</li>
+          <li>🇸🇩 عرض الثقافة والتقاليد والفلكلور السوداني.</li>
+          <li>🎶 الموسيقى والعروض الثقافية السودانية.</li>
+          <li>🍲 الأطعمة السودانية التقليدية والوجبات المجتمعية.</li>
+          <li>🛍️ بازار مجتمعي لعرض المنتجات السودانية ودعم أصحاب المشاريع الصغيرة.</li>
+          <li>👨‍👩‍👧‍👦 أنشطة ترفيهية وعائلية.</li>
+          <li>⚽ أنشطة للأطفال والشباب.</li>
+          <li>🤝 إتاحة الفرصة للمنظمات والشركاء المحليين للمشاركة.</li>
+          <li>🏆 تكريم المتميزين في المجالات المجتمعية والتعليمية والشبابية.</li>
+        </ul>
+        <p>الهدف هو أن يصبح <strong>يوم السودان</strong> فعالية سنوية تجمع الأسر والأجيال، وتحتفي بإنجازات الجالية، وتحافظ على الثقافة السودانية، وتعزز التواصل والترابط بين الأسر السودانية في منطقة لانسنغ الكبرى.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="english">
+    <h3>Greater Lansing Sudanese Association (GLSA)</h3>
+    <p>Working together to build a stronger, connected, and thriving Sudanese community.</p>
+    <p>© 2026 GLSA. All rights reserved.</p>
+  </div>
+  <div class="arabic" dir="rtl">
+    <h3>جالية السودانيين في منطقة لانسنغ الكبرى (GLSA)</h3>
+    <p>معاً لبناء مجتمع سوداني أقوى وأكثر ترابطاً وازدهاراً.</p>
+    <p>© 2026 GLSA. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<script>
+function toggleLanguage(){
+  const body=document.body;
+  const button=document.getElementById("langButton");
+  body.classList.toggle("rtl");
+  document.documentElement.lang = body.classList.contains("rtl") ? "ar" : "en";
+  document.documentElement.dir = body.classList.contains("rtl") ? "rtl" : "ltr";
+  button.textContent = body.classList.contains("rtl") ? "English" : "العربية";
+  localStorage.setItem("glsaLanguage", body.classList.contains("rtl") ? "ar" : "en");
+}
+
+(function(){
+  const saved=localStorage.getItem("glsaLanguage");
+  if(saved==="ar"){
+    document.body.classList.add("rtl");
+    document.documentElement.lang="ar";
+    document.documentElement.dir="rtl";
+    document.getElementById("langButton").textContent="English";
+  }
+})();
+</script>
+</body>
+</html>
